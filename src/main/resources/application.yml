@@ -1,0 +1,16 @@
+# Server
+server:
+  contextPath: /v1
+
+# Data and Hibernate
+spring:
+    jpa:
+        database: MYSQL    
+        hibernate:
+            ddl-auto: update
+    
+    datasource:
+        url: jdbc:mysql://localhost:3306/todo?createDatabaseIfNotExist=true
+        username: root
+        password: Friday123!
+        driver-class-name: com.mysql.jdbc.Driver
